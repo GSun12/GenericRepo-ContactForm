@@ -41,11 +41,7 @@ namespace ContactForm.Repository
         {
             using (var context = new ApplicationDbContext())
             {
-                if (context.Entry(entity).State == EntityState.Detached)
-                {
-                    context.Set<T>().Attach(entity);
-                }
-                context.Set<T>().Remove(entity);
+                context.Entry(entity).State = EntityState.Deleted;
                 context.SaveChanges();
             }
         }
