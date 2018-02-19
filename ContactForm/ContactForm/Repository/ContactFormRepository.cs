@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ContactForm.Models;
 
 namespace ContactForm.Repository
 {
 
-    public class ContactFormRepository : AbstractRepository<Models.ContactFormModel>
+    public class ContactFormRepository : AbstractRepository<ContactFormModel>
     {
     }
 }

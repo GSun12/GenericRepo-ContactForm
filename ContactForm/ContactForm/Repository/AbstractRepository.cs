@@ -9,7 +9,7 @@ using ContactForm.Models;
 namespace ContactForm.Repository
 {
     //Generyczne repozytorium jako szkielet do dalszego użycia
-    public class AbstractRepository<T> where T : class
+    public abstract class AbstractRepository<T> where T : class
     {
         public virtual void Create(T entity)
         {

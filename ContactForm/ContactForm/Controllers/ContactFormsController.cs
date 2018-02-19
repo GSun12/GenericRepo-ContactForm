@@ -16,7 +16,7 @@ namespace ContactForm.Controllers
     public class ContactFormsController : Controller
     {
         private EmailService _emailService;
-        private ContactFormRepository _contactRepository;
+        private readonly ContactFormRepository _contactRepository;
         public ContactFormsController()
         {
             _emailService = new EmailService();
